@@ -15,6 +15,7 @@
 		AA2A53FF1CFDDD1A003EF9F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2A53FD1CFDDD1A003EF9F3 /* LaunchScreen.storyboard */; };
 		AA2A540A1CFDDD1A003EF9F3 /* AlocatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2A54091CFDDD1A003EF9F3 /* AlocatorTests.m */; };
 		AA2A54151CFDDD1A003EF9F3 /* AlocatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2A54141CFDDD1A003EF9F3 /* AlocatorUITests.m */; };
+		AA63DE271D01B71A001FE02B /* WhiskeyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63DE261D01B71A001FE02B /* WhiskeyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		AA2A54101CFDDD1A003EF9F3 /* AlocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2A54141CFDDD1A003EF9F3 /* AlocatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlocatorUITests.m; sourceTree = "<group>"; };
 		AA2A54161CFDDD1A003EF9F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA63DE251D01B71A001FE02B /* WhiskeyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhiskeyViewController.h; sourceTree = "<group>"; };
+		AA63DE261D01B71A001FE02B /* WhiskeyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhiskeyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 		AA2A53EE1CFDDD1A003EF9F3 /* Alocator */ = {
 			isa = PBXGroup;
 			children = (
+				AA63DE251D01B71A001FE02B /* WhiskeyViewController.h */,
+				AA63DE261D01B71A001FE02B /* WhiskeyViewController.m */,
 				AA2A53F21CFDDD1A003EF9F3 /* AppDelegate.h */,
 				AA2A53F31CFDDD1A003EF9F3 /* AppDelegate.m */,
 				AA2A53F51CFDDD1A003EF9F3 /* ViewController.h */,
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA2A53F71CFDDD1A003EF9F3 /* ViewController.m in Sources */,
+				AA63DE271D01B71A001FE02B /* WhiskeyViewController.m in Sources */,
 				AA2A53F41CFDDD1A003EF9F3 /* AppDelegate.m in Sources */,
 				AA2A53F11CFDDD1A003EF9F3 /* main.m in Sources */,
 			);
@@ -498,6 +504,7 @@
 				AA2A541B1CFDDD1A003EF9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA2A541C1CFDDD1A003EF9F3 /* Build configuration list for PBXNativeTarget "AlocatorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +513,7 @@
 				AA2A541E1CFDDD1A003EF9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA2A541F1CFDDD1A003EF9F3 /* Build configuration list for PBXNativeTarget "AlocatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +522,7 @@
 				AA2A54211CFDDD1A003EF9F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
