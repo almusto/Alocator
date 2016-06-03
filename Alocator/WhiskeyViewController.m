@@ -15,37 +15,13 @@
 @implementation WhiskeyViewController
 
 
-- (IBAction)sliderDidChange:(id)sender {
+- (IBAction)sliderDidChange:(UISlider *)sender {
     
-    int numberOfBeers = self.beerCountSlider.value;
-    int ouncesInOneBeerGlass = 12;
-    float alcoholPercentageOfBeer = [self.beerPercentageTextField.text floatValue] / 100;
-    float ouncesOfAlcoholPerBeer = ouncesInOneBeerGlass * alcoholPercentageOfBeer;
-    float ouncesOfAlcoholTotal = ouncesOfAlcoholPerBeer * numberOfBeers;
+    [self.tabBarItem setBadgeValue:[NSString stringWithFormat:@"%d", (int) sender.value]];
     
     
-    float ouncesInOneWhiskeyGlass = 1;
-    float alcoholPercentageOfWhiskey = 0.4;
-    
-    float ouncesOfAlcoholPerWhiskeyGlass = ouncesInOneWhiskeyGlass * alcoholPercentageOfWhiskey;
-    float numberOfWhiskeyGlassesForEquivalentAlcoholAmount = ouncesOfAlcoholTotal / ouncesOfAlcoholPerWhiskeyGlass;
-    
-    NSString *whiskeyText;
-    
-    if (numberOfWhiskeyGlassesForEquivalentAlcoholAmount == 1) {
-        whiskeyText = NSLocalizedString(@"shot", @"singular shot");
-    } else {
-        whiskeyText = NSLocalizedString(@"shots", @"plural of shot");
-    }
-    
-    
-    
-    self.navigationItem.title = [NSString stringWithFormat:NSLocalizedString
-                             (@"Whiskey (%.1f %@)", nil),
-                             numberOfWhiskeyGlassesForEquivalentAlcoholAmount, whiskeyText];
     [self.beerPercentageTextField resignFirstResponder];
 }
-
 - (void)buttonPressed:(UIButton *)sender;
 {
     [self.beerPercentageTextField resignFirstResponder];
