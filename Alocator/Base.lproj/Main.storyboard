@@ -43,8 +43,8 @@
                                     <action selector="sliderDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="sxQ-sX-s6Q"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-JF-V1t">
-                                <rect key="frame" x="240" y="170" width="120" height="69.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-JF-V1t">
+                                <rect key="frame" x="240" y="169" width="120" height="69.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.41960784309999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -64,6 +64,7 @@
                             <constraint firstItem="ZxN-JF-V1t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="220" id="Q21-WS-S7e"/>
                             <constraint firstItem="f1M-67-Dxu" firstAttribute="centerX" secondItem="69t-TF-RWD" secondAttribute="centerX" id="WAB-h9-hUS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZxN-JF-V1t" secondAttribute="trailing" constant="220" id="XM1-Go-Z8k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZxN-JF-V1t" secondAttribute="trailing" constant="15" id="Zsl-iP-7Pi"/>
                             <constraint firstItem="f1M-67-Dxu" firstAttribute="width" secondItem="69t-TF-RWD" secondAttribute="width" id="bre-Lw-HQG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ZxN-JF-V1t" secondAttribute="trailing" constant="220" id="dMm-L8-gP7"/>
                             <constraint firstItem="ZxN-JF-V1t" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dyT-uq-PlL"/>
@@ -73,6 +74,7 @@
                             <constraint firstItem="ZxN-JF-V1t" firstAttribute="top" secondItem="7pH-BT-cZ1" secondAttribute="bottom" constant="22" id="igP-t5-43d"/>
                             <constraint firstItem="ZxN-JF-V1t" firstAttribute="width" secondItem="f1M-67-Dxu" secondAttribute="width" id="orI-hI-aWR"/>
                             <constraint firstItem="f1M-67-Dxu" firstAttribute="top" secondItem="69t-TF-RWD" secondAttribute="bottom" constant="8" id="v0o-ff-kLc"/>
+                            <constraint firstItem="ZxN-JF-V1t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="z2k-OY-Vko"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -84,6 +86,7 @@
                                 <exclude reference="dMm-L8-gP7"/>
                                 <exclude reference="dyT-uq-PlL"/>
                                 <exclude reference="e8w-uM-5g0"/>
+                                <exclude reference="hQd-R6-QHY"/>
                                 <exclude reference="igP-t5-43d"/>
                                 <exclude reference="orI-hI-aWR"/>
                             </mask>
@@ -144,7 +147,7 @@
                                     <action selector="sliderDidChange:" destination="Y0c-hT-r2m" eventType="valueChanged" id="2FH-WE-B7q"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44f-df-JE1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="???" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44f-df-JE1">
                                 <rect key="frame" x="240" y="170" width="120" height="69.5"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="25"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.41960784309999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -156,12 +159,15 @@
                         <constraints>
                             <constraint firstItem="44f-df-JE1" firstAttribute="top" secondItem="de8-QU-VFE" secondAttribute="bottom" constant="22" id="0Pp-ip-bDX"/>
                             <constraint firstItem="de8-QU-VFE" firstAttribute="top" secondItem="CXg-gd-V8x" secondAttribute="bottom" constant="19" id="6Pd-28-iWg"/>
+                            <constraint firstItem="44f-df-JE1" firstAttribute="top" secondItem="de8-QU-VFE" secondAttribute="bottom" constant="19" id="AgD-vn-Flz"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="leading" secondItem="b5r-7s-gMT" secondAttribute="leadingMargin" constant="220" id="F7a-KB-Rp4"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="top" secondItem="de8-QU-VFE" secondAttribute="bottom" constant="21" id="GxK-ev-uBc"/>
                             <constraint firstItem="CXg-gd-V8x" firstAttribute="width" secondItem="GLQ-6l-BbG" secondAttribute="width" id="HMh-wO-OT2"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="height" secondItem="de8-QU-VFE" secondAttribute="height" id="Ngo-YQ-yve"/>
+                            <constraint firstItem="44f-df-JE1" firstAttribute="leading" secondItem="b5r-7s-gMT" secondAttribute="leadingMargin" constant="15" id="QUU-kR-58c"/>
                             <constraint firstItem="GLQ-6l-BbG" firstAttribute="top" secondItem="zEv-9E-fOj" secondAttribute="bottom" id="Qbw-Zl-UGw"/>
                             <constraint firstAttribute="leadingMargin" secondItem="GLQ-6l-BbG" secondAttribute="leading" id="Svm-Eo-qqU"/>
+                            <constraint firstItem="44f-df-JE1" firstAttribute="centerX" secondItem="b5r-7s-gMT" secondAttribute="centerX" id="TI8-HN-OvJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GLQ-6l-BbG" secondAttribute="trailing" id="a7B-yE-uNA"/>
                             <constraint firstItem="CXg-gd-V8x" firstAttribute="centerX" secondItem="GLQ-6l-BbG" secondAttribute="centerX" id="amk-h5-zC6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="44f-df-JE1" secondAttribute="trailing" constant="220" id="cfs-Bq-Vgz"/>
@@ -171,22 +177,26 @@
                             <constraint firstItem="44f-df-JE1" firstAttribute="leading" secondItem="b5r-7s-gMT" secondAttribute="leadingMargin" constant="220" id="iMm-pg-BCo"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="top" secondItem="de8-QU-VFE" secondAttribute="bottom" constant="21" id="nPG-kk-yaw"/>
                             <constraint firstItem="de8-QU-VFE" firstAttribute="centerX" secondItem="CXg-gd-V8x" secondAttribute="centerX" id="nT3-wF-D0S"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="44f-df-JE1" secondAttribute="trailing" constant="15" id="oP1-iD-aRl"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="width" secondItem="CXg-gd-V8x" secondAttribute="width" id="rIc-lf-R4r"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="width" secondItem="de8-QU-VFE" secondAttribute="width" id="sAF-Nd-XXu"/>
                             <constraint firstItem="44f-df-JE1" firstAttribute="width" secondItem="de8-QU-VFE" secondAttribute="width" id="z1b-Fe-uCY"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="nPG-kk-yaw"/>
-                                <exclude reference="iMm-pg-BCo"/>
-                                <exclude reference="sAF-Nd-XXu"/>
-                                <exclude reference="F7a-KB-Rp4"/>
-                                <exclude reference="cfs-Bq-Vgz"/>
-                                <exclude reference="gPb-Gu-Ldg"/>
-                                <exclude reference="dcI-fM-HF5"/>
-                                <exclude reference="Ngo-YQ-yve"/>
                                 <exclude reference="0Pp-ip-bDX"/>
+                                <exclude reference="F7a-KB-Rp4"/>
+                                <exclude reference="GxK-ev-uBc"/>
+                                <exclude reference="Ngo-YQ-yve"/>
+                                <exclude reference="TI8-HN-OvJ"/>
+                                <exclude reference="cfs-Bq-Vgz"/>
+                                <exclude reference="dcI-fM-HF5"/>
+                                <exclude reference="gPb-Gu-Ldg"/>
+                                <exclude reference="iMm-pg-BCo"/>
+                                <exclude reference="nPG-kk-yaw"/>
                                 <exclude reference="rIc-lf-R4r"/>
+                                <exclude reference="sAF-Nd-XXu"/>
+                                <exclude reference="z1b-Fe-uCY"/>
                             </mask>
                         </variation>
                     </view>
